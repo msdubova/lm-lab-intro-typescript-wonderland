@@ -1,8 +1,8 @@
 /* 
 	Let's keep the actual console-based code isolated from the rest of the app with some handy wrappers.
 */
-
-import * as readline from 'node:readline';
+declare var console: Console;
+import * as readline from 'readline';
 
 export function print(str: string): void {
 	console.log(str);
